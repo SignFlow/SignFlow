@@ -1,0 +1,153 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1.5rem 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 0.5rem 0;
+}
+
+nav a {
+    color: white;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+nav a:hover {
+    background-color: #575757;
+    transform: scale(1.1);
+}
+
+/* Main Content */
+main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    flex: 1; /* Pushes footer to the bottom */
+}
+
+main h2 {
+    color: #4CAF50;
+    margin-bottom: 1rem;
+}
+
+main p, main ul {
+    margin-bottom: 1.5rem;
+}
+
+/* Team Section */
+.team-section {
+    margin-top: 2rem;
+    text-align: left; /* Left-align for a professional look */
+}
+
+.team-member {
+    background-color: #fff;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border: 1px solid #ddd; /* Light border for separation */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.team-member h3 {
+    margin: 0;
+    color: #4CAF50;
+}
+
+.team-member p {
+    margin: 0.5rem 0;
+    color: #555; /* Softer gray for text inside cards */
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.team-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 2rem;
+}
+
+.team-photo {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.team-photo img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 3px solid #4CAF50;
+}
+
+.team-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1.5rem;
+}
+
+.team-member {
+    flex: 1 1 calc(30% - 1rem); /* Responsive grid with 3 members per row */
+    background-color: #fff;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.team-member h3 {
+    margin: 0 0 0.5rem;
+    color: #4CAF50;
+}
+
+.team-member p {
+    color: #555;
+    margin: 0.5rem 0;
+}
+
+@media (max-width: 768px) {
+    .team-member {
+        flex: 1 1 100%; /* Stack members on smaller screens */
+    }
+}
